@@ -79,3 +79,7 @@ Data publications
 ``Leihy, R. I., Duffy, G. A., Nortje, E., & Chown, S. L. (2018). High resolution temperature data for ecological research and management on the Southern Ocean Islands. Scientific Data, 5, 180177.
 
 Landwehr, S., Thurnherr, I., Cassar, N., Gysel-Beer, M., and Schmale, J.: Using global reanalysis data to quantify and correct airflow distortion bias in shipborne wind speed measurements, Atmos. Meas. Tech. Discuss. in review, 2019.
+
+
+- Source chlorophyll data (8-day temporal resolution) - Ocean color 
+https://oceandata.sci.gsfc.nasa.gov/MODIS-Aqua/Mapped/8-Day/4km/chlor_a/2017/
