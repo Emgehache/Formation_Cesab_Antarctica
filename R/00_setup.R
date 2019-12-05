@@ -21,7 +21,9 @@ cran_packages <- c(
   "dplyr",
   "crayon",
   "sf",
-  "ggplot2"
+  "ggplot2",
+  "rnaturalearth",
+  "rnaturalearthdata"
 )
 
 n_i_p <- cran_packages[!(cran_packages %in% installed.packages())]
