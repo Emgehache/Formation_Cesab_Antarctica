@@ -38,3 +38,44 @@ list.files(file.path("R"))
 sessionInfo()
 ```
 
+## Sources url
+
+Cruise track:
+
+    1-second resolution: https://doi.org/10.5281/zenodo.3260616
+    1-minute resolution: https://doi.org/10.5281/zenodo.3483166
+    1-hour resolution: https://doi.org/10.5281/zenodo.3483164
+
+Meteorology data: https://doi.org/10.5281/zenodo.3379590
+
+CTD data: https://doi.org/10.5281/zenodo.3247384
+
+Many projects have now published datasets as well. 
+Those that were published through SPI can be found here: https://zenodo.org/communities/spi-ace/search?page=1&size=20
+
+
+
+Published data
+
+    You are here:Home Published data
+
+Datasets
+
+All data published from ACE can be found here. More data will be available over the coming months.
+
+Other datasets have already been published elsewhere:
+Dataset name 	Link / DOI
+Acoustic recordings of whales from Sonobuoys 	doi:10.4225/15/59d5a05f6050f
+Reconstructed non-linear surface from WAMOS (marine radar) 	doi:10.26179/5b8378b160b02
+Unidirectional wave spectra from WaMoS (marine radar) 	doi:10.4225/15/5a17923429cb7
+Aerosol optical density 	https://aeronet.gsfc.nasa.gov/new_web/cruises_new/Ak_Treshnikov_16_17.html
+SOCCOM / Bio-ARGO float 	http://www.argodatamgt.org/Access-to-data/Argo-data-selection, platform codes: 5905069, 5905070, 5905072, 5905073
+Benthic and intertidal organism specimens 	http://www.ozcam.org.au/
+Seabird and marine mammal observations 	http://seabirds.saeon.ac.za/
+Antarctic springtail occurrence records 	10.26180/5cd37a14de28b
+
+Data publications
+
+``Leihy, R. I., Duffy, G. A., Nortje, E., & Chown, S. L. (2018). High resolution temperature data for ecological research and management on the Southern Ocean Islands. Scientific Data, 5, 180177.
+
+Landwehr, S., Thurnherr, I., Cassar, N., Gysel-Beer, M., and Schmale, J.: Using global reanalysis data to quantify and correct airflow distortion bias in shipborne wind speed measurements, Atmos. Meas. Tech. Discuss. in review, 2019.
