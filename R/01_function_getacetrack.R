@@ -16,9 +16,6 @@ get_1hour_acetrack <- function(year, months) {
   if (!is.numeric(months)) { stop("x must be a numeric vector.") }
   
   
-  #### Create empty vector
-  c <- c()
-  
   for (i in min(months):max(months)) {
     
     tryCatch({
@@ -40,4 +37,4 @@ get_1hour_acetrack <- function(year, months) {
   }
 }
 
-get_1hour_acetrack(year = 2017, months = c(1,2))
+
