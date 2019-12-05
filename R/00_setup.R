@@ -1,11 +1,11 @@
 #################################################
-# My Compendium
+# Our Compendium
 #
 # 00_setup.R
 #
 # libraries and global variables
 #
-# francois.guilhaumon@ird.fr
+# Lois, Camille, Mathieu et Ilan
 #################################################
 
 #################################################
