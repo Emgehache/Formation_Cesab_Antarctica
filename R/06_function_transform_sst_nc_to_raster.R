@@ -1,5 +1,5 @@
-library(ncdf4) # package for netcdf manipulation
-library(raster) # package for raster manipulation
+#library(ncdf4) # package for netcdf manipulation
+#library(raster) # package for raster manipulation
 
 transform_nc_to_rasterlayer <- function(day1, day2) {
 day <- c(day1:day2)
