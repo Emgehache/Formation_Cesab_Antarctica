@@ -2,19 +2,18 @@
 #library(lubridate)
 #library(ncdf4)
 
-#get_chl_a_data<- function(start_date, date_end) {
-### Define periode to interest 
+get_url_env_data <- function(start_date, end_date, variable){
 
-start_date <- ymd("2017-02-02")
-end_date   <- ymd("2017-02-27")
-  
-# day of the year 
-yr         <- year(start_date) 
-start_day  <- yday(start_date)
-end_day    <- yday(end_date)
-
+### Define parameters of interest 
+start_date1 <- ymd(start_date)
+end_date1   <- ymd(end_date)
 # variable of interest
-variable <- "CHL_chlor_a" #"SST_sst"
+variable <- variable # CHL_chlor_a #SST_sst
+ 
+# day of the year 
+yr         <- year(start_date1) 
+start_day  <- yday(start_date1)
+end_day    <- yday(end_date1)
 
 
 # find correct name for file in ocean color site 
@@ -38,9 +37,5 @@ for(d in files) {
                     error=function(e) 1)
     # if(dat!=1) load(paste0("./data/",file_name))
   }
-  
-    
-  
-  
+} 
 }
-#download.file(url, des)
