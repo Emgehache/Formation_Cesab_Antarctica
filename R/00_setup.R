@@ -18,7 +18,7 @@
 cran_packages <- c(
   "devtools",
   "parallel",
-  "dplyr",
+  "tidyverse",
   "crayon",
   "sf",
   "ggplot2",
@@ -30,7 +30,8 @@ cran_packages <- c(
   "ggimage",
   "stringr",
   "emojifont",
-  "rgdal"
+  "rgdal",
+  "raster"
 )
 
 n_i_p <- cran_packages[!(cran_packages %in% installed.packages())]
