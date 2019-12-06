@@ -27,3 +27,14 @@ rmarkdown::render("README.Rmd")
 # Knit the PAPER
 ##################
 rmarkdown::render(file.path("manuscript","compte-rendu.Rmd"))
+
+
+# by lois
+#Download CTD data files from zenodo and place them in the data folder
+source("R/02_get_ctd_data.R")
+url <- "https://zenodo.org/record/3247384/files/"  
+filename <- "ace_ctd_CTD20190916CURRSGCMR"
+get_ctd_file(url, filename)
+
+
+

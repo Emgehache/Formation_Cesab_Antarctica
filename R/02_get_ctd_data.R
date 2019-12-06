@@ -18,9 +18,6 @@
 #'
 
 
-url <- "https://zenodo.org/record/3247384/files/"  
-filename <- "ace_ctd_CTD20190916CURRSGCMR"
-
 get_ctd_file <- function(url, filename) {
   dest_folder <- file.path("data")
   #dir.create(dest_folder, showWarnings = FALSE)
