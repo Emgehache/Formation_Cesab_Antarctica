@@ -30,7 +30,7 @@ rmarkdown::render(file.path("manuscript","compte-rendu.Rmd"))
 
 
 # by lois
-#Download CTD data files from zenodo and place them in the data folder
+#Download CTD data files from zenodo and place them in the data/ace_data folder
 source("R/02_get_ctd_data.R")
 url <- "https://zenodo.org/record/3247384/files/"  
 filename <- "ace_ctd_CTD20190916CURRSGCMR"
