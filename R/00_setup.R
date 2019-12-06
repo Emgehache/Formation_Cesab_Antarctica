@@ -23,7 +23,14 @@ cran_packages <- c(
   "sf",
   "ggplot2",
   "rnaturalearth",
-  "rnaturalearthdata"
+  "rnaturalearthdata",
+  "lubridate",
+  "ncdf4",
+  "gganimate",
+  "ggimage"
+  "stringr",
+  "emojifont",
+  "rgdal"
 )
 
 n_i_p <- cran_packages[!(cran_packages %in% installed.packages())]
