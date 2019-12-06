@@ -18,7 +18,7 @@
 cran_packages <- c(
   "devtools",
   "parallel",
-  "dplyr",
+  "tidyverse",
   "crayon",
   "sf",
   "ggplot2",
