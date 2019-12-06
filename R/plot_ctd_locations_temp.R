@@ -9,4 +9,4 @@ antarctica_plot() +
   geom_sf(data = ctd_locations) +
   coord_sf(crs = prj)
 
-ggsave("res/plot_ctd_positions.pdf")
+ggsave("res/plot_ctd_positions.jpg")
