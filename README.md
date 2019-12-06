@@ -1,23 +1,37 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# 🐠 🐟 My Compendium 🐟 🐠
+# 🐠 🐟 Crossing the Southern Polar Front 🐟 🐠
 
-This Compendium is full of fishes around the world 🌍 🌏 🐠.
+Projet sur la campagne antarctique durant la formation “bonnes pratiques
+pour une recherche reproductible en écologie numérique” organisée par le
+Cesab 🌍 🌏 🐠.
 
 ## Authors
 
-  - François Guilhaumon
-
-## Contact
-
-<francois.guilhaumon@ird.fr>
+  - Camille Deslias
+  - Mathieu de Goër de Herve
+  - Ilan Perez
+  - Loïs Maignien
 
 ## Script list
 
 ``` r
 list.files(file.path("R"))
-#> [1] "00_setup.R"
+#>  [1] "00_setup.R"                              
+#>  [2] "01_function_getacetrack.R"               
+#>  [3] "02_get_ctd_data.R"                       
+#>  [4] "03_function_get_url_data_weekly.R"       
+#>  [5] "03_function_get_url_data.R"              
+#>  [6] "04_function_get_url_data_daily.R"        
+#>  [7] "05_extract_ctd_headers.R"                
+#>  [8] "06_function_transform_sst_nc_to_raster.R"
+#>  [9] "07_global map.R"                         
+#> [10] "08_animation_map.R"                      
+#> [11] "make_download.R"                         
+#> [12] "plot_ctd_locations_temp.R"               
+#> [13] "test_perso.R"                            
+#> [14] "utils.R"
 ```
 
 ## Session info
@@ -41,34 +55,18 @@ sessionInfo()
 #> [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 #> 
 #> attached base packages:
-#> [1] parallel  stats     graphics  grDevices utils     datasets  methods  
-#> [8] base     
-#> 
-#> other attached packages:
-#> [1] ggplot2_3.2.1  sf_0.8-0       crayon_1.3.4   dplyr_0.8.3   
-#> [5] devtools_2.2.1 usethis_1.5.1 
+#> [1] stats     graphics  grDevices utils     datasets  methods   base     
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] tidyselect_0.2.5   xfun_0.9           remotes_2.1.0     
-#>  [4] purrr_0.3.3        colorspace_1.4-1   testthat_2.3.1    
-#>  [7] htmltools_0.3.6    emo_0.0.0.9000     yaml_2.2.0        
-#> [10] rlang_0.4.2        pkgbuild_1.0.6     e1071_1.7-3       
-#> [13] pillar_1.4.2       glue_1.3.1         withr_2.1.2       
-#> [16] DBI_1.0.0          sessioninfo_1.1.1  stringr_1.4.0     
-#> [19] munsell_0.5.0      gtable_0.3.0       memoise_1.1.0     
-#> [22] evaluate_0.14      knitr_1.25         callr_3.3.2       
-#> [25] ps_1.3.0           class_7.3-14       Rcpp_1.0.2        
-#> [28] KernSmooth_2.23-15 backports_1.1.4    scales_1.0.0      
-#> [31] classInt_0.4-2     desc_1.2.0         pkgload_1.0.2     
-#> [34] fs_1.3.1           digest_0.6.21      stringi_1.4.3     
-#> [37] processx_3.4.1     rprojroot_1.3-2    grid_3.4.4        
-#> [40] cli_1.1.0          tools_3.4.4        magrittr_1.5      
-#> [43] lazyeval_0.2.2     tibble_2.1.3       pkgconfig_2.0.3   
-#> [46] ellipsis_0.3.0     prettyunits_1.0.2  lubridate_1.7.4   
-#> [49] assertthat_0.2.1   rmarkdown_1.15     rstudioapi_0.10   
-#> [52] R6_2.4.0           units_0.6-5        compiler_3.4.4
+#>  [1] Rcpp_1.0.2       lubridate_1.7.4  emo_0.0.0.9000   digest_0.6.21   
+#>  [5] crayon_1.3.4     assertthat_0.2.1 magrittr_1.5     evaluate_0.14   
+#>  [9] rlang_0.4.2      stringi_1.4.3    rstudioapi_0.10  rmarkdown_1.18  
+#> [13] tools_3.4.4      stringr_1.4.0    glue_1.3.1       purrr_0.3.3     
+#> [17] xfun_0.9         yaml_2.2.0       compiler_3.4.4   htmltools_0.3.6 
+#> [21] knitr_1.25
 ```
-## Sources
+
+## Sources url
 
 Cruise track:
 
@@ -76,14 +74,13 @@ Cruise track:
     1-minute resolution: https://doi.org/10.5281/zenodo.3483166
     1-hour resolution: https://doi.org/10.5281/zenodo.3483164
 
-Meteorology data: https://doi.org/10.5281/zenodo.3379590
+Meteorology data: <https://doi.org/10.5281/zenodo.3379590>
 
-CTD data: https://doi.org/10.5281/zenodo.3247384
+CTD data: <https://doi.org/10.5281/zenodo.3247384>
 
-Many projects have now published datasets as well. 
-Those that were published through SPI can be found here: https://zenodo.org/communities/spi-ace/search?page=1&size=20
-
-
+Many projects have now published datasets as well. Those that were
+published through SPI can be found here:
+<https://zenodo.org/communities/spi-ace/search?page=1&size=20>
 
 Published data
 
@@ -91,22 +88,33 @@ Published data
 
 Datasets
 
-All data published from ACE can be found here. More data will be available over the coming months.
+All data published from ACE can be found here. More data will be
+available over the coming months.
 
-Other datasets have already been published elsewhere:
-Dataset name 	Link / DOI
-Acoustic recordings of whales from Sonobuoys 	doi:10.4225/15/59d5a05f6050f
-Reconstructed non-linear surface from WAMOS (marine radar) 	doi:10.26179/5b8378b160b02
-Unidirectional wave spectra from WaMoS (marine radar) 	doi:10.4225/15/5a17923429cb7
-Aerosol optical density 	https://aeronet.gsfc.nasa.gov/new_web/cruises_new/Ak_Treshnikov_16_17.html
-SOCCOM / Bio-ARGO float 	http://www.argodatamgt.org/Access-to-data/Argo-data-selection, platform codes: 5905069, 5905070, 5905072, 5905073
-Benthic and intertidal organism specimens 	http://www.ozcam.org.au/
-Seabird and marine mammal observations 	http://seabirds.saeon.ac.za/
-Antarctic springtail occurrence records 	10.26180/5cd37a14de28b
+Other datasets have already been published elsewhere: Dataset name Link
+/ DOI Acoustic recordings of whales from Sonobuoys
+<doi:10.4225/15/59d5a05f6050f> Reconstructed non-linear surface from
+WAMOS (marine radar) <doi:10.26179/5b8378b160b02> Unidirectional wave
+spectra from WaMoS (marine radar) <doi:10.4225/15/5a17923429cb7> Aerosol
+optical density
+<https://aeronet.gsfc.nasa.gov/new_web/cruises_new/Ak_Treshnikov_16_17.html>
+SOCCOM / Bio-ARGO float
+<http://www.argodatamgt.org/Access-to-data/Argo-data-selection>,
+platform codes: 5905069, 5905070, 5905072, 5905073 Benthic and
+intertidal organism specimens <http://www.ozcam.org.au/> Seabird and
+marine mammal observations <http://seabirds.saeon.ac.za/> Antarctic
+springtail occurrence records 10.26180/5cd37a14de28b
 
 Data publications
 
-``Leihy, R. I., Duffy, G. A., Nortje, E., & Chown, S. L. (2018). High resolution temperature data for ecological research and management on the Southern Ocean Islands. Scientific Data, 5, 180177.
+\`\`Leihy, R. I., Duffy, G. A., Nortje, E., & Chown, S. L. (2018). High
+resolution temperature data for ecological research and management on
+the Southern Ocean Islands. Scientific Data, 5, 180177.
 
-Landwehr, S., Thurnherr, I., Cassar, N., Gysel-Beer, M., and Schmale, J.: Using global reanalysis data to quantify and correct airflow distortion bias in shipborne wind speed measurements, Atmos. Meas. Tech. Discuss. in review, 2019.
+Landwehr, S., Thurnherr, I., Cassar, N., Gysel-Beer, M., and Schmale,
+J.: Using global reanalysis data to quantify and correct airflow
+distortion bias in shipborne wind speed measurements, Atmos. Meas. Tech.
+Discuss. in review, 2019.
 
+  - Source chlorophyll data (8-day temporal resolution) - Ocean color
+    <https://oceandata.sci.gsfc.nasa.gov/MODIS-Aqua/Mapped/8-Day/4km/chlor_a/2017/>
