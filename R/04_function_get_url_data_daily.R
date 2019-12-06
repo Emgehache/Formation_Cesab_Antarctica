@@ -33,7 +33,8 @@ get_url_env_data_day <- function(start_date, end_date, variable){
       
       res <- tryCatch(download.file(url,
                                     destfile=paste0("./data/",file_name),
-                                    method="auto"),
+                                    method="auto", 
+                                    mode="wb"),
                       error=function(e) 1)
       # if(dat!=1) load(paste0("./data/",file_name))
     }
