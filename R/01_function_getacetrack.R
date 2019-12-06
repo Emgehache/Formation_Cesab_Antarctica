@@ -10,7 +10,7 @@
 
 get_1hour_acetrack <- function(year, months){
   
-data <- 
+ 
 lapply(months, function(i){
   
   ## Checks                         ----------
@@ -27,8 +27,6 @@ lapply(months, function(i){
     download.file(url = url, destfile = track)
     track<- read.csv(file = track)
     return(track)}, error=function(e){})}) %>% bind_rows()
-
-return(test)
 
 }
 
