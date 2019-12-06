@@ -33,7 +33,8 @@ for(d in files) {
     
     res <- tryCatch(download.file(url,
                                   destfile=paste0("./data/",file_name),
-                                  method="auto"),
+                                  method="auto", 
+                                  mode="wb"),
                     error=function(e) 1)
     # if(dat!=1) load(paste0("./data/",file_name))
   }
