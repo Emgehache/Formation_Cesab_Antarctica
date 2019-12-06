@@ -1,0 +1,60 @@
+---
+title: Crossing the Southern Polar Front
+subtitle: <i>Spatial Project </i>
+author: <br /><br />Lois, Mathieu, Ilan et Camille 
+date: 6/12/2019
+output:
+  xaringan::moon_reader:
+    css: ["assets/css/xaringan-themer.css", "assets/css/custom.css"]
+    lib_dir: "assets/libs"
+    seal: true
+    yolo: false
+    self_contained: false
+    nature:
+      ratio: "4:3"
+      titleSlideClass: ["right", "middle"]
+      highlightStyle: 'zenburn'
+      highlightLines: false
+      countIncrementalSlides: false
+      slideNumberFormat: "%current% / %total%"
+      beforeInit: "assets/libs/macros.js"
+---
+
+class: inverse, center, middle
+
+## Introduction
+
+Decembre 2016 à mars 2017 
+
+![](res/plot_ctd_positions.jpg)
+
+
+---
+## Données utilisées 
+
+- Antarctic Circumnavigation Expedition
+  - Trajectoire GPS du navire 
+  
+  
+
+- Données environnementales (Aqua-MODIS)
+
+  - Sea Surface Temperature 
+  - Chlorophyll a 
+
+source : [https://oceancolor.gsfc.nasa.gov/]
+
+---
+
+
+## Fonctions utilisées 
+
+![](docs/function_used.png)
+
+
+---
+## Trajet du bateau 
+
+![](res/anim_chlora)
+
+---
