@@ -27,5 +27,6 @@ get_ctd_file <- function(url, filename) {
   )
   unzip(file.path(dest_folder, paste0(filename, ".zip")), exdir = dest_folder)
   file.remove(file.path(dest_folder, paste0(filename, ".zip")))
+  file.rename(file.path(dest_folder, filename), file.path(dest_folder, "ace_ctd"))
 }
 get_ctd_file(url, filename)
