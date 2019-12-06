@@ -27,7 +27,7 @@ cran_packages <- c(
   "lubridate",
   "ncdf4",
   "gganimate",
-  "ggimage"
+  "ggimage",
   "stringr",
   "emojifont",
   "rgdal"
